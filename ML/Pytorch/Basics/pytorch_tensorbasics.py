@@ -163,7 +163,8 @@ values, indices = torch.max(x, dim=0)  # Can also do x.max(dim=0)
 values, indices = torch.min(x, dim=0)  # Can also do x.min(dim=0)
 abs_x = torch.abs(x)  # Returns x where abs function has been applied to every element
 z = torch.argmax(x, dim=0)  # Gets index of the maximum value
-z = torch.argmin(x, dim=0)  # Gets index of the minimum value
+z = torch.argmin(x, dim=0)
+print(z)# Gets index of the minimum value
 mean_x = torch.mean(x.float(), dim=0)  # mean requires x to be float
 z = torch.eq(x, y)  # Element wise comparison, in this case z = [False, False, False]
 sorted_y, indices = torch.sort(y, dim=0, descending=False)
